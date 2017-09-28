@@ -21,7 +21,6 @@ namespace Movie.Db
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-           
             modelBuilder.HasDefaultSchema(schema: "Movie");
             base.OnModelCreating(modelBuilder);
         }

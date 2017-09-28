@@ -27,7 +27,6 @@ namespace Movie.Db
         public string Name { get; set; }
         public DateTime Release { get; set; }
         public string Description { get; set; }
-
     }
 
     public class Location 
