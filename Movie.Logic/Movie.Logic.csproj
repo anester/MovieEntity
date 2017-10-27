@@ -4,6 +4,10 @@
     <ProjectReference Include="..\Movie.Db\Movie.Db.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Implementation\" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>

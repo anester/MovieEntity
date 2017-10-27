@@ -7,16 +7,22 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Movie.Db
 {
-    public class MovieContext : DbContext
+    class MovieContext : DbContext
     {
         public DbSet<Movie> Movies{get;set;}
         public DbSet<User> Users { get; set; }
         public DbSet<Location> Locations{get;set;}
         public DbSet<Media> Medias{get;set;}
         public DbSet<Person> Persons{get;set;}
+
         public MovieContext(DbContextOptions<MovieContext> options) 
             : base(options)
         {
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            base.OnConfiguring(optionsBuilder);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
